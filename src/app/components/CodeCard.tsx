@@ -22,7 +22,7 @@ const CodeCard = () => {
   };
 
   return (
-    <Card className="relative border border-black rounded-[30px] shadow-md p-4 w-80 bg-white overflow-hidden">
+    <Card className="relative border border-black rounded-[30px] shadow-md  w-80 bg-white overflow-hidden">
       <div className="absolute top-2 right-2 cursor-pointer">
         <IconButton
           id="basic-button"
@@ -34,7 +34,7 @@ const CodeCard = () => {
           <MenuIcon />
         </IconButton>
       </div>
-      <CardContent>
+      <CardContent sx={{ paddingBottom: "16px !important" }}>
         <div className=" text-lg font-semibold text-black">Title</div>
 
         <p className="text-gray-600 text-sm">Coding Language/framework</p>
@@ -55,6 +55,14 @@ const CodeCard = () => {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+        anchorOrigin={{
+          vertical: "center",
+          horizontal: "left",
+        }}
+        transformOrigin={{
+          vertical: "center",
+          horizontal: "center",
+        }}
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
