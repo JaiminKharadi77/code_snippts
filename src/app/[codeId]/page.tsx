@@ -66,3 +66,9 @@ const Code: React.FC<CodeProps> = ({ params }) => {
 };
 
 export default Code;
+
+
+// const decodedCode = Buffer.from(snippet.code, 'base64').toString();
+// console.log(decodedCode);
+
+// will use the for encoded and decoded code
