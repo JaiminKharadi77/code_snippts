@@ -8,8 +8,9 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import MenuIcon from "@mui/icons-material/Menu";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
 
 const CodeCard = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -40,13 +41,21 @@ const CodeCard = () => {
         <p className="text-gray-600 text-sm">Coding Language/framework</p>
         <p className="mt-2 font-bold text-sm">Tech Stack Used</p>
         <p className="text-gray-500 text-sm">Tech Stack Icons</p>
-        <div className="mt-4">
+        <div className="mt-4 flex justify-between">
           <Button
             className="rounded-[30px] bg-yellow-500"
             variant="contained"
             startIcon={<PlayArrowIcon />}
           >
             Copy Code
+          </Button>
+          <Button
+            className=""
+            variant="text"
+            color="info"
+            endIcon={<ArrowRightAltOutlinedIcon />}
+          >
+            edit
           </Button>
         </div>
       </CardContent>

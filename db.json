@@ -1,0 +1,19 @@
+{
+    "snippts": [
+        {
+            "id": 1,
+            "name": "hello world",
+            "code": "ZnVuY3Rpb24gcmVjKG4pewogICAgaWYobjwyKSByZXR1cm4gMTsKICAgIHJldHVybiBuKnJlYyhuLTEpOwp9Cgpjb25zb2xlLmxvZyhyZWMoNCkpOw=="
+        },
+        {
+            "id": 2,
+            "name": "Factorial",
+            "code": "ZnVuY3Rpb24gcmVjKG4pewogICAgaWYobjwyKSByZXR1cm4gMTsKICAgIHJldHVybiBuKnJlYyhuLTEpOwp9Cgpjb25zb2xlLmxvZyhyZWMoNCkpOw=="
+        },
+        {
+            "id": 3,
+            "name": "Factorial3",
+            "code": "ZnVuY3Rpb24gcmVjKG4pewogICAgaWYobjwyKSByZXR1cm4gMTsKICAgIHJldHVybiBuKnJlYyhuLTEpOwp9Cgpjb25zb2xlLmxvZyhyZWMoNCkpOw=="
+        }
+    ]
+}
