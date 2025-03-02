@@ -12,7 +12,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
 
-const CodeCard = () => {
+const CodeCard = (props: CodeCardPropsTypes) => {
+  const { title, code, codingLangaugae } = props;
+
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -36,7 +38,7 @@ const CodeCard = () => {
         </IconButton>
       </div>
       <CardContent sx={{ paddingBottom: "16px !important" }}>
-        <div className=" text-lg font-semibold text-black">Title</div>
+        <div className=" text-lg font-semibold text-black">{title}</div>
 
         <p className="text-gray-600 text-sm">Coding Language/framework</p>
         <p className="mt-2 font-bold text-sm">Tech Stack Used</p>
@@ -44,6 +46,7 @@ const CodeCard = () => {
         <div className="mt-4 flex justify-between">
           <Button
             className="rounded-[30px] bg-yellow-500"
+            sx={{ backgroundColor: "#eab308", borderRadius: "30px" }}
             variant="contained"
             startIcon={<PlayArrowIcon />}
           >
@@ -85,3 +88,9 @@ const CodeCard = () => {
 };
 
 export default CodeCard;
+
+type CodeCardPropsTypes = {
+  title: string;
+  codingLangaugae: string;
+  code: string;
+};
