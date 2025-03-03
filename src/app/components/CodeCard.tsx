@@ -13,7 +13,7 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
 
 const CodeCard = (props: CodeCardPropsTypes) => {
-  const { title, code, codingLangaugae } = props;
+  const { title, code, codingLangaugae, onClick } = props;
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -56,6 +56,7 @@ const CodeCard = (props: CodeCardPropsTypes) => {
             className=""
             variant="text"
             color="info"
+            onClick={onClick && onClick}
             endIcon={<ArrowRightAltOutlinedIcon />}
           >
             edit
@@ -93,4 +94,5 @@ type CodeCardPropsTypes = {
   title: string;
   codingLangaugae: string;
   code: string;
+  onClick?: () => void; // Added function type for onClick 
 };
